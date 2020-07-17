@@ -15,14 +15,19 @@
 
     <dependencies>
 
-        <!-- Dependencia explícita a la API de JPA -->
         <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>5.4.14.Final</version>
+        </dependency>
+
+        <dependency>
+            <!-- API para el JPA -->
             <groupId>org.hibernate.javax.persistence</groupId>
             <artifactId>hibernate-jpa-2.1-api</artifactId>
             <version>1.0.0.Final</version>
         </dependency>
 
-        <!-- Al tener la dependencia anterior, Hibernate-core puede pasar a ser "runtime" -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
@@ -36,6 +41,7 @@
             <version>1.4.196</version>
             <scope>runtime</scope>
         </dependency>
+
 
     </dependencies>
 
