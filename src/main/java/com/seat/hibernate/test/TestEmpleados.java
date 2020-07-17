@@ -17,9 +17,8 @@ public class TestEmpleados {
         emf = Persistence.createEntityManagerFactory("Seat-Persistence");
         manager = emf.createEntityManager();
 
-     //   List<Empleado> empleados = (List<Empleado>) manager.createQuery("FROM Empleado").getResultList();
-      //  System.out.println("En esta base de datos hay " + empleados.size() + " empleados");
-
+        List<Empleado> empleados = (List<Empleado>) manager.createQuery("FROM Empleado").getResultList();
+        System.out.println("En esta base de datos hay " + empleados.size() + " empleados");
 
     }
 }
