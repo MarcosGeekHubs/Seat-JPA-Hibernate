@@ -1,4 +1,4 @@
-package com.sear.hibernate.modelo;
+package com.seat.hibernate.modelo;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
